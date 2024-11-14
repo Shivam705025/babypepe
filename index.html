@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Pepe Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- Custom Fonts -->
     <style>
         /* Basic Reset */
         * {
@@ -54,6 +54,37 @@
             font-weight: bold;
             font-family: 'Patrick Hand', sans-serif;
             text-transform: uppercase;
+        }
+
+        /* Right section with the image and text */
+        .right-section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-grow: 1;
+            padding-left: 30px;
+            padding-right: 20px;
+            height: 100vh; /* Full viewport height */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .right-text {
+            font-family: 'Montserrat', sans-serif; /* Stylish font */
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #fff;
+            text-align: left;
+            max-width: 600px;
+            line-height: 1.4;
+            text-transform: uppercase;
+            margin-right: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow for cool effect */
+        }
+
+        .right-text span {
+            display: block;
+            margin-bottom: 20px;
         }
 
         nav {
@@ -112,6 +143,17 @@
             .baby-pepe {
                 width: 60px; /* Adjust size for mobile */
             }
+
+            .right-text {
+                font-size: 1.6rem;
+                margin-right: 0;
+            }
+
+            .right-section {
+                height: auto;
+                padding: 20px;
+                background-size: contain;
+            }
         }
     </style>
 </head>
@@ -129,11 +171,23 @@
                     <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#bridge">Bridge</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
                 </ul>
             </nav>
             <!-- Buy Now Button -->
             <button class="buy-now-button">Buy Now</button>
         </div>
     </header>
+
+    <!-- Right Section with Text and Image -->
+    <div class="right-section">
+        <div class="right-text">
+            <span>$babypepe</span>
+            <span>The most memeable memecoin in existence.</span>
+            <span>The dogs have had their day, it’s time for Pepe to take reign.</span>
+        </div>
+        <img src="babypepe.png" alt="Baby Pepe" class="baby-pepe">
+    </div>
 </body>
 </html>
