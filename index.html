@@ -66,12 +66,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: calc(100vh - 120px); /* Full screen minus header height */
+            height: calc(100vh - 80px); /* Full screen minus header height */
             padding: 0 30px;
-            margin-top: 120px; /* Adjusted margin to push below the fixed header */
+            margin-top: 80px; /* Margin to push it below the fixed header */
             background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center fixed;
             background-size: cover;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow for the section */
         }
 
         .home-image {
@@ -126,9 +125,9 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-        /* Buy Now Button */
-        .buy-now-button {
-            background-color: #4CAF50; /* Normal green color */
+        /* Join Telegram Button */
+        .join-telegram-button {
+            background-color: #0078D4; /* Blue color */
             color: #fff;
             font-size: 1.5rem;
             font-weight: bold;
@@ -137,12 +136,12 @@
             border-radius: 5px;
             cursor: pointer;
             text-transform: uppercase;
-            margin-top: 30px; /* Increased margin-top */
+            margin-top: 15px;
             transition: all 0.3s ease;
         }
 
-        .buy-now-button:hover {
-            background-color: #45a049; /* Slightly darker green on hover */
+        .join-telegram-button:hover {
+            background-color: #005A9E; /* Slightly darker blue on hover */
         }
 
         /* Mobile Responsiveness */
@@ -150,7 +149,7 @@
             .home-section {
                 flex-direction: column; /* Stack the image and text vertically */
                 padding: 20px;
-                margin-top: 120px;
+                margin-top: 80px;
             }
 
             .home-image {
@@ -162,6 +161,24 @@
                 font-size: 1.6rem;
                 text-align: center;
             }
+        }
+
+        /* Iframe Container Styling */
+        #iframeContainer {
+            width: 80%;
+            max-width: 800px;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            border: 2px solid #fff;
+            margin: 50px auto; /* Center the iframe container */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -183,20 +200,28 @@
                     <li><a href="#tokenomics">Tokenomics</a></li>
                 </ul>
             </nav>
-            <!-- Buy Now Button -->
-            <button class="buy-now-button">Buy Now</button>
+            <!-- Join Telegram Button -->
+            <button class="join-telegram-button">Join Telegram</button>
         </div>
     </header>
 
     <!-- Home Section with Image on Left and Text on Right -->
-    <div class="home-section">
+    <div class="home-section" id="home">
         <img src="babypepehome.png" alt="Baby Pepe" class="home-image">
         <div class="home-text">
             <span>$babypepe</span>
             <span>The most memeable memecoin in existence.</span>
             <span>The dogs have had their day, it’s time for Pepe to take reign.</span>
-            <button class="buy-now-button">Buy Baby Pepe</button>
+            <button class="join-telegram-button">Join Telegram</button>
         </div>
     </div>
+
+    <!-- Bridge Section with Iframe -->
+    <div id="bridge">
+        <div id="iframeContainer">
+            <iframe src="https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R" title="Embedded Content"></iframe>
+        </div>
+    </div>
+
 </body>
 </html>
