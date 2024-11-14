@@ -17,6 +17,10 @@
             font-family: 'Patrick Hand', sans-serif;
             background-color: #2f8f3a; /* Green background */
             color: #fff; /* White text */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         header {
@@ -42,47 +46,53 @@
             align-items: center;
         }
 
-        /* Bigger image */
         .baby-pepe {
-            width: 80px; /* Increased size */
+            width: 90px; /* Adjusted size for better visibility */
             height: auto;
-            margin-right: 10px; /* Space between image and text */
+            margin-right: 15px; /* Space between image and text */
+            border-radius: 50%; /* Circular image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect for the image */
         }
 
         .baby-pepe-text {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
-            font-family: 'Patrick Hand', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
+            color: #fff;
         }
 
-        /* Right section with the image and text */
-        .right-section {
+        /* Home Section with Image on Left and Text on Right */
+        .home-section {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            flex-grow: 1;
-            padding-left: 30px;
-            padding-right: 20px;
+            justify-content: space-between;
             height: 100vh; /* Full viewport height */
+            padding: 0 30px;
             background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center fixed;
             background-size: cover;
         }
 
-        .right-text {
+        .home-image {
+            width: 50%; /* Make the image occupy half the screen */
+            height: auto;
+            border-radius: 15px; /* Rounded corners for the image */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+        }
+
+        .home-text {
             font-family: 'Montserrat', sans-serif; /* Stylish font */
             font-weight: bold;
-            font-size: 2.5rem;
+            font-size: 3rem;
             color: #fff;
             text-align: left;
             max-width: 600px;
             line-height: 1.4;
             text-transform: uppercase;
-            margin-right: 20px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow for cool effect */
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Text shadow for cool effect */
         }
 
-        .right-text span {
+        .home-text span {
             display: block;
             margin-bottom: 20px;
         }
@@ -96,7 +106,7 @@
             list-style-type: none;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
         }
 
         nav a {
@@ -105,15 +115,15 @@
             font-weight: bold;
             font-size: 1.5rem;
             padding: 10px 20px;
-            transition: all 0.3s ease;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
         }
 
-        /* Buy Now Button with Normal Green */
+        /* Buy Now Button */
         .buy-now-button {
             background-color: #4CAF50; /* Normal green color */
             color: #fff;
@@ -124,35 +134,29 @@
             border-radius: 5px;
             cursor: pointer;
             text-transform: uppercase;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .buy-now-button:hover {
+            background-color: #45a049; /* Slightly darker green on hover */
         }
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column; /* Stack the menu items vertically */
-                gap: 10px;
-            }
-
-            .buy-now-button {
-                margin-top: 10px;
-                width: 100%; /* Make the button full-width on mobile */
-                font-size: 1.2rem;
-                padding: 15px;
-            }
-
-            .baby-pepe {
-                width: 60px; /* Adjust size for mobile */
-            }
-
-            .right-text {
-                font-size: 1.6rem;
-                margin-right: 0;
-            }
-
-            .right-section {
-                height: auto;
+            .home-section {
+                flex-direction: column; /* Stack the image and text vertically */
                 padding: 20px;
-                background-size: contain;
+            }
+
+            .home-image {
+                width: 80%; /* Adjust image size for mobile */
+                margin-bottom: 20px;
+            }
+
+            .home-text {
+                font-size: 1.8rem;
+                text-align: center;
             }
         }
     </style>
@@ -171,6 +175,8 @@
                     <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#bridge">Bridge</a></li>
+                    <li><a href="#tokenomics">Tokenomics</a></li>
                 </ul>
             </nav>
             <!-- Buy Now Button -->
@@ -178,14 +184,15 @@
         </div>
     </header>
 
-    <!-- Right Section with Text and Image -->
-    <div class="right-section">
-        <div class="right-text">
+    <!-- Home Section with Image on Left and Text on Right -->
+    <div class="home-section">
+        <img src="babypepe.png" alt="Baby Pepe" class="home-image">
+        <div class="home-text">
             <span>$babypepe</span>
             <span>The most memeable memecoin in existence.</span>
             <span>The dogs have had their day, it’s time for Pepe to take reign.</span>
+            <button class="buy-now-button">Buy Baby Pepe</button>
         </div>
-        <img src="babypepe.png" alt="Baby Pepe" class="baby-pepe">
     </div>
 </body>
 </html>
