@@ -17,10 +17,9 @@
             font-family: 'Patrick Hand', sans-serif;
             background-color: #2f8f3a; /* Green background */
             color: #fff; /* White text */
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
         header {
@@ -67,8 +66,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 100vh; /* Full viewport height */
+            height: calc(100vh - 80px); /* Full screen minus header height */
             padding: 0 30px;
+            margin-top: 80px; /* Margin to push it below the fixed header */
             background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center fixed;
             background-size: cover;
         }
@@ -83,13 +83,15 @@
         .home-text {
             font-family: 'Montserrat', sans-serif; /* Stylish font */
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 2rem; /* Slightly smaller text */
             color: #fff;
             text-align: left;
             max-width: 600px;
             line-height: 1.4;
             text-transform: uppercase;
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Text shadow for cool effect */
+            letter-spacing: 1.5px; /* Adds a stylish, spaced effect */
+            font-style: italic; /* Makes text a bit more curvy and stylish */
         }
 
         .home-text span {
@@ -155,7 +157,7 @@
             }
 
             .home-text {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 text-align: center;
             }
         }
