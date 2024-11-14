@@ -92,6 +92,8 @@
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6); /* Text shadow for cool effect */
             letter-spacing: 1.5px; /* Adds a stylish, spaced effect */
             font-style: italic; /* Makes text a bit more curvy and stylish */
+            word-wrap: break-word; /* Prevents text from overflowing */
+            overflow-wrap: break-word; /* Ensures long words break properly */
         }
 
         .home-text span {
@@ -184,38 +186,23 @@
             }
         }
 
-        /* About Section Styling */
-        .about-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 50px 30px;
-            margin-top: 40px;
-            background-color: #fff;
-            color: #000;
+        /* Iframe Container Styling */
+        #iframeContainer {
+            width: 100%;
+            padding: 20px; /* Padding around iframe */
+            box-sizing: border-box; /* Ensure padding is included in the element's total width/height */
+            margin-top: 40px; /* Space between the iframe and previous sections */
+            border: 4px solid #fff; /* White border around the iframe */
+            border-radius: 10px; /* Rounded corners for iframe */
+            overflow: hidden; /* Prevent content from overflowing */
         }
 
-        .about-text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            font-size: 1.8rem;
-            max-width: 600px;
-            line-height: 1.6;
-            text-align: left;
-            text-shadow: none;
-            padding: 20px;
-            border: 2px solid black;
+        iframe {
+            width: 100%;
+            height: 700px; /* Increased height of the iframe */
+            border: none;
             border-radius: 10px;
-            background-image: linear-gradient(45deg, #d1d1d1, #f0f0f0); /* Beautiful texture */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        .about-image {
-            width: 40%;
-            height: auto;
-            border-radius: 15px;
-        }
-
     </style>
 </head>
 <body>
@@ -252,20 +239,12 @@
         </div>
     </div>
 
-    <!-- About Section -->
-    <div id="about" class="about-section">
-        <div class="about-text">
-            <p>Pepe is tired of watching everyone play hot potato with the endless derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the internet.</p>
-            <p>Pepe is here to make memecoins great again. Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin for the people, forever. Fueled by pure memetic power, let $PEPE show you the way.</p>
+    <!-- Bridge Section with Iframe -->
+    <div id="bridge">
+        <div id="iframeContainer">
+            <iframe src="https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R" title="Embedded Content"></iframe>
         </div>
-        <img src="babypepeabout.png" alt="Pepe" class="about-image">
     </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Baby Pepe. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
