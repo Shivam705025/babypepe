@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Green Themed Beautiful Website</title>
+    <title>Pepe-Inspired Crypto Platform</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* General Reset */
@@ -17,9 +17,10 @@
         /* Body and Fonts */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f9f4;
-            color: #333;
+            background-color: #212121;
+            color: #e0e0e0;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         /* Header */
@@ -27,7 +28,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #388e3c; /* Dark green */
+            background-color: #1b5e20; /* Dark green */
             padding: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
@@ -54,13 +55,13 @@
         }
 
         nav ul li a:hover {
-            color: #f0f8f4;
+            color: #c8e6c9;
             transform: translateY(-5px);
         }
 
         /* Hero Section */
         .hero {
-            background: url('https://images.unsplash.com/photo-1555685812-dff2d0a59835') no-repeat center center/cover;
+            background: url('https://images.unsplash.com/photo-1542281286-7f0d7c2a1800') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 120px 20px;
@@ -68,7 +69,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 700;
             letter-spacing: 2px;
             margin-bottom: 20px;
@@ -83,7 +84,7 @@
         }
 
         .hero .btn {
-            background-color: #28a745; /* Green Button */
+            background-color: #4caf50; /* Bright Green */
             color: white;
             font-size: 16px;
             padding: 12px 30px;
@@ -93,7 +94,7 @@
         }
 
         .hero .btn:hover {
-            background-color: #218838;
+            background-color: #388e3c;
             transform: translateY(-5px);
         }
 
@@ -101,14 +102,14 @@
         section {
             padding: 60px 20px;
             text-align: center;
-            background-color: #f4f9f4;
+            background-color: #263238;
         }
 
         section h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
             font-weight: 700;
-            color: #388e3c;
+            color: #80e27e; /* Lighter Green */
         }
 
         section p {
@@ -124,7 +125,7 @@
         footer {
             text-align: center;
             padding: 40px 20px;
-            background-color: #388e3c;
+            background-color: #1b5e20;
             color: white;
             font-size: 0.875rem;
             box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
@@ -132,6 +133,15 @@
 
         footer p {
             margin-top: 20px;
+        }
+
+        /* Buttons and Animations */
+        .btn, nav ul li a {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .btn:hover, nav ul li a:hover {
+            transform: scale(1.1);
         }
 
         /* Responsive Design */
@@ -172,18 +182,18 @@
     </header>
 
     <section class="hero" id="home">
-        <h1>Welcome to Our Green-Themed Website!</h1>
-        <p>Explore our services and discover more about our beautiful, nature-inspired designs. Join us on our journey to a sustainable future.</p>
-        <a href="#about" class="btn">Learn More</a>
+        <h1>Welcome to Crypto Paradise</h1>
+        <p>Your one-stop platform for crypto trading and investments. Join us now and discover a new way of digital finance.</p>
+        <a href="#about" class="btn">Get Started</a>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>We are passionate about providing green solutions that are both innovative and sustainable. Our team works tirelessly to bring the best of nature and technology together to create a better future.</p>
+        <p>We offer the most secure and reliable services for crypto investors. Our team is dedicated to ensuring that you experience seamless and profitable transactions in the world of cryptocurrency.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        <p>&copy; 2024 Crypto Paradise. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
