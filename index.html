@@ -9,7 +9,151 @@
         /* Basic Reset */
         * {
             margin: 0;
+            padding: 0;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Pepe Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"> <!-- Custom Font -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Patrick Hand', sans-serif;
+            background-color: #2f8f3a; /* Green background */
+            color: #fff; /* White text */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the menu */
+            z-index: 10;
+        }
+
+        .menu-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            flex-wrap: wrap; /* Allow menu to wrap on smaller screens */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Bigger image */
+        .baby-pepe {
+            width: 80px; /* Increased size */
+            height: auto;
+            margin-right: 10px; /* Space between image and text */
+        }
+
+        .baby-pepe-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: 'Patrick Hand', sans-serif;
+            text-transform: uppercase;
+        }
+
+        nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Buy Now Button */
+        .buy-now-button {
+            background-color: #005c2d; /* Dark green color */
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now-button:hover {
+            background-color: #00421f; /* Darker green on hover */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; /* Stack the menu items vertically */
+                gap: 10px;
+            }
+
+            .buy-now-button {
+                margin-top: 10px;
+                width: 100%; /* Make the button full-width on mobile */
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+
+            .baby-pepe {
+                width: 60px; /* Adjust size for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <div class="menu-container">
+            <div class="logo-container">
+                <img src="babypepe.png" alt="Baby Pepe" class="baby-pepe">
+                <span class="baby-pepe-text">Baby Pepe</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Buy Now Button -->
+            <button class="buy-now-button">Buy Now</button>
+        </div>
+    </header>
+</body>
+</html>
+
             box-sizing: border-box;
         }
 
