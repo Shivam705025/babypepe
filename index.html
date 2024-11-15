@@ -136,6 +136,66 @@
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
     text-transform: uppercase;
 }
+            .tokenomics-section {
+        background-color: #2f8f3a; /* Matches other sections */
+        padding: 60px 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        margin-top: 40px;
+    }
+
+    .tokenomics-heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 40px;
+    }
+
+    .tokenomics-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .tokenomics-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.8;
+        max-width: 50%;
+        text-align: left;
+        background-color: rgba(0, 100, 0, 0.8); /* Semi-transparent dark green */
+        padding: 40px;
+        border-radius: 15px;
+        border: 3px solid #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .tokenomics-text p {
+        margin: 15px 0;
+    }
+
+    .tokenomics-image {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .token-image-circle {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%; /* Circular image */
+        border: 5px solid #fff; /* White border around the image */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    }
 
 
 
@@ -250,6 +310,20 @@
             .about-image {
                 width: 80%;
             }
+            .tokenomics-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tokenomics-text, .tokenomics-image {
+            width: 100%;
+        }
+        
+        .token-image-circle {
+            width: 250px;
+            height: 250px;
+        }
         }
 
         /* Iframe Container Styling */
@@ -319,6 +393,20 @@
             <iframe src="https://raydium.io/swap/?inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R" title="Embedded Content"></iframe>
         </div>
     </div>
+    <section id="tokenomics" class="tokenomics-section">
+    <h2 class="tokenomics-heading">Tokenomics</h2>
+    <div class="tokenomics-content">
+        <div class="tokenomics-text">
+            <p><strong>Total Supply:</strong> 420,690,000,000,000</p>
+            <p><strong>Taxes:</strong> None. Simple and transparent.</p>
+            <p>LP tokens are burned, and contract ownership is renounced. This is truly a coin for the people, by the people.</p>
+        </div>
+        <div class="tokenomics-image">
+            <img src="babypepetokenomics.png" alt="Token Icon" class="token-image-circle">
+        </div>
+    </div>
+</section>
+
 
 </body>
 </html>
