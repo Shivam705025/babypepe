@@ -270,6 +270,85 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
     }
 
+            .how-to-buy-section {
+        background-color: #3fa46a;
+        padding: 60px 20px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        margin-top: 40px;
+    }
+
+    .how-to-buy-heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 40px;
+    }
+
+    .how-to-buy-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .buy-step {
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s;
+    }
+
+    .buy-step:hover {
+        transform: translateY(-10px);
+    }
+
+    .buy-step-image {
+        width: 120px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+    }
+
+    .buy-step-text {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        color: #fff;
+    }
+
+    .buy-step-text h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffe14f;
+        margin-bottom: 10px;
+    }
+
+    .buy-step-text p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #f2f2f2;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .buy-step-text a {
+        color: #ffe14f;
+        text-decoration: underline;
+    }
+
+    .buy-step-text a:hover {
+        color: #ffbf1f;
+    }
+
+
 
 
         .about-image {
@@ -415,6 +494,29 @@
         .phase-box {
             font-size: 1.3rem;
         }
+
+                    .how-to-buy-steps {
+            gap: 20px;
+        }
+        
+        .buy-step {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .buy-step-image {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        
+        .buy-step-text h3 {
+            font-size: 1.6rem;
+        }
+        
+        .buy-step-text p {
+            font-size: 1.1rem;
+        }
             
         }
 
@@ -519,6 +621,44 @@
         </div>
     </div>
 </section>
+
+<section id="how-to-buy" class="how-to-buy-section">
+    <h2 class="how-to-buy-heading">How to Buy</h2>
+    <div class="how-to-buy-steps">
+        <div class="buy-step">
+            <img src="createwallet.png" alt="Create a Wallet" class="buy-step-image">
+            <div class="buy-step-text">
+                <h3>Create a Wallet</h3>
+                <p>Download MetaMask or your wallet of choice from the app store or Google Play for free. Desktop users, download the Google Chrome extension by going to <a href="https://metamask.io" target="_blank">metamask.io</a>.</p>
+            </div>
+        </div>
+        
+        <div class="buy-step">
+            <img src="get-eth.png" alt="Get Some ETH" class="buy-step-image">
+            <div class="buysteptext">
+                <h3>Get Some ETH</h3>
+                <p>Have ETH in your wallet to switch to $PEPE. Buy ETH directly on MetaMask, transfer from another wallet, or buy on an exchange and send it to your wallet.</p>
+            </div>
+        </div>
+        
+        <div class="buy-step">
+            <img src="gotouniswap.png" alt="Go to Uniswap" class="buy-step-image">
+            <div class="buy-step-text">
+                <h3>Go to Uniswap</h3>
+                <p>Connect to Uniswap by going to <a href="https://app.uniswap.org" target="_blank">app.uniswap.org</a> in Google Chrome or within the MetaMask browser. Connect your wallet, paste the $PEPE token address, select Pepe, and confirm. Sign when MetaMask prompts you.</p>
+            </div>
+        </div>
+        
+        <div class="buy-step">
+            <img src="switcheth.png" alt="Switch ETH for $PEPE" class="buy-step-image">
+            <div class="buy-step-text">
+                <h3>Switch ETH for $PEPE</h3>
+                <p>Switch ETH for $PEPE. With ZERO taxes, there’s no need for specific slippage, though it may be required during high volatility.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 </body>
 </html>
