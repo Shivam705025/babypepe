@@ -33,6 +33,65 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Shadow only on the menu bar */
         }
 
+        /* Contact Section */
+.contact-section {
+    background-color: #2f8f3a;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Contact Heading */
+.contact-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffe14f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 18px;
+    color: #f2f2f2;
+    margin-bottom: 50px;
+}
+
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Icon Item Styling */
+.icon-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-align: center;
+}
+
+.icon-item:hover {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.icon-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.icon-item p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
         .menu-container {
             display: flex;
             align-items: center;
@@ -658,6 +717,52 @@
             <div class="buy-step-text">
                 <h3>Switch ETH for $PEPE</h3>
                 <p>Switch ETH for $PEPE. With ZERO taxes, there’s no need for specific slippage, though it may be required during high volatility.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <div class="contact-container">
+        <h2 class="contact-heading">Contact Us</h2>
+        <div class="contact-info">
+            <p>We'd love to hear from you! Reach out to us on any of the following platforms:</p>
+        </div>
+        <div class="contact-icons">
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Twitter_Logo_2021.svg" alt="Twitter" />
+                <p>Twitter</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Telegram_logo.svg" alt="Telegram" />
+                <p>Telegram</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Uniswap_Logo.svg" alt="Uniswap" />
+                <p>Uniswap</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Binance_Logo.svg" alt="Binance" />
+                <p>Binance</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/MEXC_Logo.svg" alt="MEXC" />
+                <p>MEXC</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Bybit_Logo.svg" alt="Bybit" />
+                <p>Bybit</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Kucoin_Logo.svg" alt="KuCoin" />
+                <p>KuCoin</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Coinmarketcap_logo.svg" alt="CoinMarketCap" />
+                <p>CoinMarketCap</p>
+            </div>
+            <div class="icon-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/CoinGecko_logo.svg" alt="CoinGecko" />
+                <p>CoinGecko</p>
             </div>
         </div>
     </div>
