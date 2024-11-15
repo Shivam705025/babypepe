@@ -196,6 +196,82 @@
         border: 5px solid #fff; /* White border around the image */
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     }
+            .roadmap-section {
+        background-color: #2e8a3a;
+        padding: 60px 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        margin-top: 40px;
+    }
+
+    .roadmap-heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        margin-bottom: 40px;
+    }
+
+    .roadmap-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .roadmap-image {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .roadmap-image-circle {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .roadmap-phases {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .roadmap-phase {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .phase-box {
+        background: linear-gradient(135deg, #3fa46a, #2a783e);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        padding: 20px 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        text-align: left;
+    }
+
+    .roadmap-connector {
+        width: 5px;
+        height: 40px;
+        background-color: #fff;
+        margin: 20px auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
 
 
 
@@ -324,6 +400,26 @@
             width: 250px;
             height: 250px;
         }
+
+                    .roadmap-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .roadmap-image, .roadmap-phases {
+            width: 100%;
+        }
+        
+        .roadmap-image-circle {
+            width: 250px;
+            height: 250px;
+        }
+        
+        .phase-box {
+            font-size: 1.3rem;
+        }
+            
         }
 
         /* Iframe Container Styling */
@@ -406,7 +502,27 @@
         </div>
     </div>
 </section>
-
+<section id="roadmap" class="roadmap-section">
+    <h2 class="roadmap-heading">Roadmap</h2>
+    <div class="roadmap-content">
+        <div class="roadmap-image">
+            <img src="babypeperoadmap.png" alt="Roadmap Icon" class="roadmap-image-circle">
+        </div>
+        <div class="roadmap-phases">
+            <div class="roadmap-phase">
+                <div class="phase-box">Phase 1: Meme</div>
+            </div>
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-phase">
+                <div class="phase-box">Phase 2: Vibe and HODL</div>
+            </div>
+            <div class="roadmap-connector"></div>
+            <div class="roadmap-phase">
+                <div class="phase-box">Phase 3: Meme Takeover</div>
+            </div>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
