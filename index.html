@@ -500,92 +500,119 @@
         }
 
         /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .home-section {
-                flex-direction: column; /* Stack the image and text vertically */
-                padding: 20px;
-                margin-top: 80px;
-            }
+@media (max-width: 768px) {
+    /* Home Section */
+    .home-section {
+        flex-direction: column; /* Stack the image and text vertically */
+        padding: 20px;
+        margin-top: 80px;
+    }
 
-            .home-image {
-                width: 80%; /* Adjust image size for mobile */
-                margin-bottom: 20px;
-            }
+    .home-image {
+        width: 80%; /* Adjust image size for mobile */
+        margin-bottom: 20px;
+    }
 
-            .home-text {
-                font-size: 1.6rem;
-                text-align: center;
-            }
-            .about-section {
-                flex-direction: column;
-                padding: 40px;
-            }
+    .home-text {
+        font-size: 1.4rem; /* Smaller font size for mobile */
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 10px; /* Add some side padding for better readability */
+    }
 
-            .about-text {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+    /* About Section */
+    .about-section {
+        flex-direction: column;
+        padding: 30px;
+    }
 
-            .about-image {
-                width: 80%;
-            }
-            .tokenomics-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+    .about-text {
+        width: 100%;
+        font-size: 1.2rem; /* Adjusted font size for readability */
+        line-height: 1.8;
+        margin-bottom: 20px;
+        text-align: justify; /* Better alignment for larger blocks of text */
+    }
 
-        .tokenomics-text, .tokenomics-image {
-            width: 100%;
-        }
-        
-        .token-image-circle {
-            width: 250px;
-            height: 250px;
-        }
+    .about-image {
+        width: 80%; /* Adjust image size */
+        margin: 0 auto; /* Center the image */
+    }
 
-        .roadmap-content {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+    /* Tokenomics Section */
+    .tokenomics-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
 
-        .roadmap-image, .roadmap-phases {
-            width: 100%;
-        }
-        
-        .roadmap-image-large {
-            width: 100%;
-        }
-        
-        .phase-box {
-            font-size: 1.3rem;
-        }
+    .tokenomics-text, .tokenomics-image {
+        width: 100%;
+        font-size: 1.2rem; /* Adjust font size for tokenomics text */
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
 
-        .how-to-buy-steps {
-            gap: 20px;
-        }
-        
-        .buy-step {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .buy-step-image {
-            width: 100px;
-            margin-bottom: 15px;
-        }
-        
-        .buy-step-text h3 {
-            font-size: 1.6rem;
-        }
-        
-        .buy-step-text p {
-            font-size: 1.1rem;
-        }
-            
-        }
+    .token-image-circle {
+        width: 200px;
+        height: 200px; /* Smaller circle size for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Roadmap Section */
+    .roadmap-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .roadmap-image, .roadmap-phases {
+        width: 100%;
+        font-size: 1.2rem; /* Adjust roadmap text size */
+        line-height: 1.6;
+    }
+
+    .roadmap-image-large {
+        width: 100%;
+    }
+
+    .phase-box {
+        font-size: 1.1rem; /* Adjust font size for roadmap phases */
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /* How to Buy Section */
+    .how-to-buy-steps {
+        gap: 20px;
+    }
+
+    .buy-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .buy-step-image {
+        width: 80px; /* Smaller icons for steps */
+        margin-bottom: 10px;
+    }
+
+    .buy-step-text h3 {
+        font-size: 1.4rem; /* Slightly smaller headings */
+        margin-bottom: 8px;
+    }
+
+    .buy-step-text p {
+        font-size: 1rem; /* Smaller text for step descriptions */
+        line-height: 1.5;
+        margin: 0 10px;
+    }
+}
+
 
         /* Iframe Container Styling */
         #iframeContainer {
